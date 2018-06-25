@@ -1,7 +1,8 @@
 <div>
 
-  Studant: {{studant.name}}
-  <div *ngIf="studant.isJedi" >
-    Jedi Temple: {{studant.temple}}
+  Studant: {{studant?.name}}
+  <div *ngIf="studant?.isJedi" >
+    Jedi Temple: {{studant?.temple}}
   </div>
+  <p *ngIf="!studant">Nenhum estudante cadastrado!</p>
 </div>
